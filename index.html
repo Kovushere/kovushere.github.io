@@ -22,7 +22,7 @@
                 font-family: "Rock Salt", serif;
                 text-align: center:
             }
-            
+          
             .nav {
                 height: 40px;
             }
@@ -59,11 +59,16 @@
                 padding: 25px;
             }
             
+            #banner {
+                flex-direction: row;
+            }
+            
             #top-row {
                 align-content: right;
                 margin-left: @ auto;
                 border: none;
                 padding: 90px;
+                flex-direction: row;
             }
             
             #middle-row {
@@ -85,16 +90,25 @@
                 color: white;
             }
             
+            footer {
+                background-color: black;
+                box-sizing: auto;
+                align-content: center;
+            }
         
                         
             
         </style>
     </head>
     
-    <body style="background-color: #34495E">
+    <body style="background-color: #17202A">
+        
+        <h1>DRY OAR BOATING</h1>
         
         <div class="content">
-                <img src="http://brothert.net/dryoar/images/dryoarlogo.png" width="115" height="100" alt="Dry Oar Boating Logo" style="align: left"><br> <h1>DRY OAR BOATING</h1>
+                <img src="http://brothert.net/dryoar/images/dryoarlogo.png" width="115" height="100" alt="Dry Oar Boating Logo" style="align: left">
+            
+        
             
         <div class="nav">
             <ul>
@@ -105,8 +119,10 @@
                 <li><a href="index.html">Contact Us</a></li>
             </ul>
         </div>
-                <img src="http://brothert.net/dryoar/images/littlecolorado-wide.jpg" width="940" height="250" alt="Dry Oar Boating Logo" style="align: center; margin-bottom: 15px; padding: 4px;"><br>
             
+            <section id="banner">
+                <img src="http://brothert.net/dryoar/images/littlecolorado-wide.jpg" width="940" height="250" alt="Dry Oar Boating Logo" style="align: center; margin-bottom: 15px; padding: 4px;"><br>
+            </section><br>
                 
         <section id="top-row">
             <div class="leftcol">
