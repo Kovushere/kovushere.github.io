@@ -7,14 +7,22 @@
         <style type="text/css">
             @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
             .content {
-                align-content: center;
-                width: auto;
+                width: 80%;
                 max-width: 960px;
-                margin: @ auto;
+                margin: 0 auto;
             }
                 
             body { 
                 font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            #logo{
+                background-color: white;
+                position: relative;
+            }
+            
+            img{
+                max-width: 100%;
             }
             
             h1, h2, h3, h4, h5, h6 {
@@ -24,15 +32,20 @@
             }
           
             .nav {
-                height: 40px;
+                line-height: 3em;
+                background-color: #85C1E9;
+                margin-top: -100px;
+
             }
             
             .nav ul li {
                 list-style: none;
+                
             }
             .nav ul {
                 list-style-type: none;
-                margin: auto;
+                margin-bottom: 0;
+                margin-left: 7em;
                 padding: auto;
                 overflow: hidden;
             }
@@ -40,7 +53,6 @@
             a:link,a:visited{
                 display: block;
                 color: #FFFFFF;
-                background-color: #85C1E9;
                 width: 120px;
                 text-align: center;
                 padding: 6px;
@@ -59,16 +71,21 @@
                 padding: 25px;
             }
             
-            #banner {
-                flex-direction: row;
+            #banner img {
+                width: 100%;
             }
             
-            #top-row {
-                align-content: right;
-                margin-left: @ auto;
-                border: none;
-                padding: 90px;
-                flex-direction: row;
+            #top-row, #middle-row {
+                display:flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .rightcol, .leftcol{
+                flex: 1 0 15em;
+                margin: .5em;
+                
             }
             
             #middle-row {
@@ -102,14 +119,12 @@
     </head>
     
     <body style="background-color: #17202A">
-        
-        <h1>DRY OAR BOATING</h1>
-        
+                
         <div class="content">
-                <img src="http://brothert.net/dryoar/images/dryoarlogo.png" width="115" height="100" alt="Dry Oar Boating Logo" style="align: left">
+                <img src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="Dry Oar Boating Logo" style="align: left" id="logo">
             
         
-            
+    
         <div class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -120,32 +135,31 @@
             </ul>
         </div>
             
-            <section id="banner">
-                <img src="http://brothert.net/dryoar/images/littlecolorado-wide.jpg" width="940" height="250" alt="Dry Oar Boating Logo" style="align: center; margin-bottom: 15px; padding: 4px;"><br>
-            </section><br>
+            <div id="banner">
+                <img src="http://brothert.net/dryoar/images/littlecolorado-wide.jpg" alt="Dry Oar Boating Logo"><br>
+            </div>
                 
         <section id="top-row">
             <div class="leftcol">
-                <img src="raft-rapid.png" width="420" height="315" alt="Dry Oar Boating Logo" style="float: right; margin-left: 50px;">
+                <img src="raft-rapid.png" alt="Dry Oar Boating Logo"></div>
+            <div class="rightcol">
             <h2>WILDLY FUN!!!</h2>
                 <p> That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that that tenseness that comes when you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful water that always follows even more.</p>
             </div>
         </section><br>
             
-            
-            
-            
+        
         
         <section id="middle-row">
-            <div class="rightcol">
-              <img src="http://brothert.net/dryoar/images/salmon-interest.jpg" width="420" height="315" alt="Dry Oar Boating Logo" style="float: left; margin-right: 30px;"><br>
-                <h2> YOU WILL LEAVE WITH A SMILE!!! </h2>
+            
+            <div class="leftcol"> <h2> YOU WILL LEAVE WITH A SMILE!!! </h2>
             <p> We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. We're waiting to hear from you!</p>
             </div>
+            
+            <div class="rightcol">
+              <img src="http://brothert.net/dryoar/images/salmon-interest.jpg" alt="Dry Oar Boating Logo" ></div>
+            
         </section><br>
-            
-            
-            
             
             
         <section id="bottom-row">
@@ -156,10 +170,8 @@
         </section>
 
             
-            
-            
-        <section id="socail-media-icons">
-            <div class="nav">
+             <footer>
+                 <div class="social">
                 <ul>
             
                 <li><a href="https://www.facebook.com/BYUID/" target="_blank"><img src="Facebook%20Circle.png" width="50" height="50" alt="Dry Oar Boating Logo" border="0" /></a></li>
@@ -168,10 +180,6 @@
                 
                 </ul>
             </div>
-        </section>
-            
-             <footer>
-                 
                 <p>&copy; 2015 Dry Oar || Victor Garcia </p>
                  
             </footer>
